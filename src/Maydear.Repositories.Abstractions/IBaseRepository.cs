@@ -41,7 +41,7 @@ namespace Maydear.Repositories
         /// <summary>
         /// 更新实体
         /// </summary>
-        /// <param name="func">实体加工参数</param>
+        /// <param name="entity">实体加工参数</param>
         /// <returns>成功则返回True，失败则返回false</returns>
         bool Change(T entity);
 
@@ -64,7 +64,7 @@ namespace Maydear.Repositories
         /// 更新实体
         /// </summary>
         /// <param name="condition">待更新实体的搜索条件</param>
-        /// <param name="actionEntity">待更新实体</param>
+        /// <param name="actionEntities">待更新实体</param>
         /// <returns>成功则返回True，失败则返回false</returns>
         bool ChangeRange(Expression<Func<T, bool>> condition, Action<IList<T>> actionEntities);
 
