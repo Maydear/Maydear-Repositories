@@ -1,9 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFrameworks>netstandard2.0;net46;</TargetFrameworks>
         <PackageProjectUrl>https://github.com/Maydear/Maydear</PackageProjectUrl>
         <RepositoryUrl>https://github.com/Maydear/Maydear.git</RepositoryUrl>
+        <PackageIconUrl>http://oss.lvcoco.com/static/logo.png</PackageIconUrl>
         <PackageLicenseFile>LICENSE-2.0.txt</PackageLicenseFile>
         <RepositoryType>git</RepositoryType>
         <Copyright>Maydear Team (admin@maydear.com)</Copyright>
@@ -13,7 +14,7 @@
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <Title>Maydear 仓储接口</Title>
         <Description>仓储基础类</Description>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <AssemblyName>Maydear.Repositories.Abstractions</AssemblyName>
         <NeutralLanguage>zh-CN</NeutralLanguage>
         <Language>zh-CN</Language>
