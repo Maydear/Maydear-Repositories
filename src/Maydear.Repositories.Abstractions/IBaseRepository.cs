@@ -48,7 +48,7 @@ namespace Maydear.Repositories
         /// </summary>
         /// <param name="entities">实体集合</param>
         /// <returns>成功则返回True，失败则返回false</returns>
-        bool AddRange(IList<T> entities);
+        bool AddRange(IEnumerable<T> entities);
 
         /// <summary>
         /// 更新实体
@@ -62,7 +62,7 @@ namespace Maydear.Repositories
         /// </summary>
         /// <param name="entities">实体更新的实体集合</param>
         /// <returns>成功则返回True，失败则返回false</returns>
-        bool ChangeRange(IList<T> entities);
+        bool ChangeRange(IEnumerable<T> entities);
 
         /// <summary>
         /// 更新实体
@@ -78,7 +78,7 @@ namespace Maydear.Repositories
         /// <param name="condition">待更新实体的搜索条件</param>
         /// <param name="actionEntities">待更新实体</param>
         /// <returns>成功则返回True，失败则返回false</returns>
-        bool ChangeRange(Expression<Func<T, bool>> condition, Action<IList<T>> actionEntities);
+        bool ChangeRange(Expression<Func<T, bool>> condition, Action<IEnumerable<T>> actionEntities);
 
         /// <summary>
         /// 移除实体
